@@ -84,7 +84,7 @@ No additional setup is required — all dependencies are handled within Colab.
 **Aditya Mhatre**
 B.Tech IT Graduate | Aspiring Data Scientist
 📍 Mumbai, India
-🔗 [LinkedIn](https://linkedin.com/adityamhatre19) • [GitHub](https://github.com/Adityx1)
+🔗 [LinkedIn](https://www.linkedin.com/in/adityamhatre19/) • [GitHub](https://github.com/Adityx1)
 
 ---
 
