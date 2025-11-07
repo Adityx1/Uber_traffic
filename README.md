@@ -1,91 +1,97 @@
 # 🚖 Uber Traffic Analysis & Forecasting
 
-This project explores Uber ride and traffic data to understand urban mobility trends, visualize temporal ride patterns, and forecast future demand using classical and advanced predictive models. Built and tested in **Google Colab**, this notebook integrates data analysis, feature engineering, and model comparison to evaluate performance across multiple machine learning and time series approaches.
+This project focuses on analyzing Uber ride and traffic data to uncover urban mobility trends, visualize temporal ride patterns, and forecast future demand using advanced machine learning and time series models. Built and tested in **Google Colab**, it integrates data preprocessing, feature engineering, model comparison, and deployment into a complete end-to-end workflow.
 
 ---
 
 ## 📊 Project Overview
 
-The notebook performs a detailed **exploratory data analysis (EDA)** to identify:
+The project combines exploratory data analysis (EDA), predictive modeling, and API deployment to deliver a full analytical and operational pipeline. It investigates:
 
-* Temporal ride trends across hours, days, and months
-* Correlations between traffic volume and external factors (e.g., weather, time)
-* Key contributors to traffic congestion and demand fluctuations
+* Temporal ride patterns across hours, days, and months
+* Correlations between traffic volume and external factors (e.g., weather, time, events)
+* Key contributors to congestion and demand fluctuations
+* Model-driven traffic forecasting for real-time applications
 
-After EDA, multiple forecasting models are implemented to predict ride volume and traffic patterns:
-
-* **Machine Learning:** Random Forest, Gradient Boosting, Ridge, Lasso, XGBoost
-* **Time Series:** ARIMA, SARIMAX
-* **Deep Learning:** LSTM (conditional on TensorFlow availability)
+After thorough EDA, multiple predictive models are trained and evaluated to forecast ride volume and traffic intensity.
 
 ---
 
 ## 🧠 Key Features
 
-* **Data Cleaning & Feature Engineering** – Handling missing values, extracting datetime features, and encoding relevant variables.
-* **Comprehensive Visualization** – Using `matplotlib` and `seaborn` to illustrate trends and correlations.
-* **Model Evaluation** – Comparing predictive performance via MAE, RMSE, and R² metrics.
-* **Forecasting Pipeline** – Applying and tuning ML, statistical, and DL models for time-based prediction.
-* **Modular Design** – Built in sections for ease of replication and experimentation.
+* **Data Cleaning & Preprocessing** – Handling missing values, outliers, and inconsistent records.
+* **Advanced Feature Engineering** – Incorporates:
+
+  * Time-based, lag, rolling, and cyclical features
+  * External data such as weather and local events
+* **Model Development & Evaluation** – Implements and compares:
+
+  * Regression and tree-based models (Random Forest, Gradient Boosting, XGBoost, Ridge, Lasso)
+  * Statistical models (ARIMA, SARIMAX)
+  * Deep learning model (LSTM, conditional on TensorFlow availability)
+* **Cross-Validation & Feature Importance Analysis** – Ensures robust performance and interpretable insights.
+* **Forecasting Pipeline** – Trains, tunes, and benchmarks multiple models using MAE, RMSE, and R² metrics.
+* **Model Deployment** – The best-performing model (**XGBoost**) is saved and deployed via a **FastAPI** application, publicly exposed through **ngrok** for real-time predictions.
 
 ---
 
 ## 🧰 Tech Stack
 
-| Category          | Tools & Libraries             |
-| ----------------- | ----------------------------- |
-| Data Manipulation | `pandas`, `numpy`             |
-| Visualization     | `matplotlib`, `seaborn`       |
-| Machine Learning  | `scikit-learn`, `xgboost`     |
-| Time Series       | `statsmodels`                 |
-| Deep Learning     | `tensorflow.keras`            |
-| API Integration   | `requests` (for weather data) |
+| Category          | Tools & Libraries                     |
+| ----------------- | ------------------------------------- |
+| Data Manipulation | pandas, numpy                         |
+| Visualization     | matplotlib, seaborn                   |
+| Machine Learning  | scikit-learn, xgboost                 |
+| Time Series       | statsmodels                           |
+| Deep Learning     | tensorflow.keras                      |
+| API & Deployment  | FastAPI, ngrok                        |
+| External Data     | requests (for weather and event data) |
 
 ---
 
 ## 📈 Model Evaluation Metrics
 
-Each model is assessed on:
+Each model is assessed using:
 
 * **Mean Absolute Error (MAE)**
 * **Root Mean Squared Error (RMSE)**
 * **R² Score**
 
-This enables clear comparison of model performance and predictive power for Uber traffic forecasting.
+These metrics enable transparent comparison of model accuracy and predictive reliability.
 
 ---
 
 ## 🧩 Results & Insights
 
-The analysis reveals:
+The project highlights:
 
-* Clear **peak-hour ride concentration** during morning and evening commutes
-* Significant **weekday–weekend pattern shifts** in traffic volume
-* Weather and time-based variables as strong predictors of ride demand
-* **SARIMAX** and **LSTM** showing robust predictive capabilities over traditional regression models
+* Distinct **peak-hour ride demand** during morning and evening commutes
+* Noticeable **weekday–weekend shifts** in traffic intensity
+* **Weather, event, and temporal factors** as strong predictors of ride volume
+* **XGBoost** achieving superior performance among all models
+* **SARIMAX** and **LSTM** showing competitive results for time-dependent forecasting
 
 ---
 
 ## 🚀 How to Use
 
-Simply open the notebook in **Google Colab**:
+1. **Open the notebook in Google Colab**
+2. **Upload the dataset** (if not provided in the repository)
+3. **Run all cells sequentially** to perform data analysis, model training, and evaluation
+4. **Launch the FastAPI app** to generate real-time predictions via API calls through ngrok
 
-1. Upload the dataset (if not provided in the repo)
-2. Run all cells sequentially
-3. Visualize trends and inspect model outputs
-
-No additional setup is required — all dependencies are handled within Colab.
+All dependencies are automatically handled within the Colab environment.
 
 ---
 
-
-## 🧑‍💻 Author
+## 👨‍💻 Author
 
 **Aditya Mhatre**
 B.Tech IT Graduate | Aspiring Data Scientist
 📍 Mumbai, India
-🔗 [LinkedIn](https://www.linkedin.com/in/adityamhatre19/) • [GitHub](https://github.com/Adityx1)
+
+🔗 [LinkedIn](#https://www.linkedin.com/in/adityamhatre19) • [GitHub](#https://github.com/Adityx1)
 
 ---
 
-*An end-to-end analytical exploration of Uber’s traffic behavior — blending data science, time series modeling, and machine learning for real-world insight.*
+An end-to-end data-driven exploration of Uber’s traffic behavior — blending **data science, feature engineering, machine learning, time series analysis, and API deployment** into a unified, real-world traffic forecasting solution.
