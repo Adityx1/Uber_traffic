@@ -90,7 +90,7 @@ All dependencies are automatically handled within the Colab environment.
 B.Tech IT Graduate | Aspiring Data Scientist
 📍 Mumbai, India
 
-🔗 [LinkedIn](#https://www.linkedin.com/in/adityamhatre19) • [GitHub](#https://github.com/Adityx1)
+🔗 [LinkedIn](https://www.linkedin.com/in/adityamhatre19) • [GitHub](https://github.com/Adityx1)
 
 ---
 
